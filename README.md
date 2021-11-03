@@ -1,6 +1,18 @@
 # RubikCube1-LVGL-Clock
 在基于ESP32的RubikCube1上基于LVGL8玩耍
 
+### 使用方法
+#### 配置相关
+- 编辑platformio.ini：
+``` ini
+upload_speed = 921600
+monitor_speed = 115200
+
+;使用ArduinoOTA
+upload_protocol = espota
+upload_port = 192.168.1.171 ;设备IP地址
+```
+
 #### RubikCube1
 * 官方地址：https://www.upahead.cn//#/R001
 * GitHub：https://github.com/upahead

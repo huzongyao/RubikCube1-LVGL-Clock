@@ -94,6 +94,7 @@ void inline setupOTAConfig() {
     tft.setTextColor(TFT_SKYBLUE, TFT_BLACK);
     tft.drawCentreString("Restarting...", 160, 140, 2);
   });
+  ArduinoOTA.onError([](ota_error_t err) { ESP.restart(); });
   ArduinoOTA.begin();
 }
 
